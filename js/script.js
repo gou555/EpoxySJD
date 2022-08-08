@@ -13,7 +13,7 @@ window.onload = function () {
 
 }
 
-$(document).on('click', '#btnContactUs', function(){
+/*$(document).on('click', '#btnContactUs', function(){
     var em = $("#email").val();
     var na = $("#name").val();
     var msg = $("#message").val();
@@ -29,7 +29,7 @@ $(document).on('click', '#btnContactUs', function(){
         Email.send({
             Host : "smtp.elasticemail.com",
             Username : "epoxysjdmail@gmail.com",
-            Password : "45C461DA9D4FD4DA53678CD025C0C2790CC2",
+            Password : "988C58757369BE7B208B583701816EA3292E",
             To : "willgoulet555@gmail.com",
             From : "epoxysjdmail@gmail.com",
             Subject : "subject",
@@ -39,4 +39,4 @@ $(document).on('click', '#btnContactUs', function(){
         );
     }
     return false;
-  });
+  });*/
