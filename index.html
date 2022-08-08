@@ -26,8 +26,9 @@
 
     <!--Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
 
@@ -137,65 +138,74 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid d-flex justify-content-center">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-9 px-md-5">
             <div class="well well-sm">
               <form>
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-4">
                     <div class="form-group">
-                      <label for="name" style="color:white">
-                        Name
-                      </label>
                       <input type="text" class="form-control" id="name" placeholder="Nom" required="required"/>
                     </div>
                     <br>
                     <div class="form-group">          
-                      <label for="email" style="color:white">
-                        Email
-                      </label>
                       <input type="text" class="form-control" id="email" placeholder="Email" required="required"/>
                     </div>
                     <br>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-8">
                     <div class="form-group">
-                        <label for="message" style="color:white">
-                            Message</label>
                         <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
                             placeholder="Message"></textarea>
                     </div>
-                  </div>
-                  
-                  <div class="col-md-12 my-2">
-                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-                            Send Messag</button>
+                    <div class="col-md-12 my-2">
+                      <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                          Envoyer</button>
                     </div>
-                  </div> 
+                  </div>           
+                </div>
+                
               </form>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <form>
-                <br>
-                <address>
-                  <i class="fa-solid fa-envelope fa-xl" style="color:white"></i>
-                  <a href="mailto:#">epoxysjd@gmail.com</a>
-                </address>
-                  <i class="fa-solid fa-phone fa-xl" style="color:white"></i>
-                  <label style="color:white">(418) 997-6252</label>
-                <br>
-                <br>
-                <a href="https://www.instagram.com/epoxysjd/"> <i class="fa-brands fa-instagram fa-xl" style="color:white"></i></a>
-                <a href="https://www.facebook.com/%C3%89POXY-SJD-103274411498003/"> <i class="fa-brands fa-facebook fa-xl" style="color:white"></i></a>
-              </form>
+              <div id="display"></div>
             </div>
           </div>
-
-        </div>
-
-
+        
+            <div class="col-md-3 px-md-5 d-flex justify-content--center">
+              <div class="well well-sm">
+                <form>
+                  <div class="row my-3">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <address>
+                          <i class="fa-solid fa-envelope fa-xl" style="color:white"></i>
+                          <a href="mailto:#">epoxysjd@gmail.com</a>
+                        </address>
+                      </div>
+                    </div>
+                    <div class="row my-3">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <i class="fa-solid fa-phone fa-xl" style="color:white"></i>
+                          <label style="color:white">(418) 997-6252</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row my-3">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <a href="https://www.instagram.com/epoxysjd/"><i class="fa-brands fa-instagram fa-xl"style="color:white"></i></a>
+                          
+                          <a href="https://www.facebook.com/%C3%89POXY-SJD-103274411498003/"><i class="fa-brands fa-facebook fa-lg" style="color:white"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
       </div>
       </section>
 
@@ -207,4 +217,14 @@
 
 
   </body>
+
+  <footer> 
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); color: gray;">
+    © 2022 Copyright: Époxy SJD
+  </div>
+  <!-- Copyright -->
+</footer>
+
+  </footer>
 </html>
