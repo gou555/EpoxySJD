@@ -40,3 +40,22 @@ window.onload = function () {
     }
     return false;
   });*/
+
+/*$(document).on('click', '#btnContactUs', function(){
+    $.ajax({
+    type: "POST",
+    url: "http://localhost/mail.php",
+    data: { name: "John" }
+    }).done(function( ) {
+      alert("test'");
+    });
+});*/
+
+
+  /*$.ajax({
+    type: "POST",
+    url: "mail.php",
+    data: { name: "John" }
+  }).done(function( ) {
+      alert('test');
+  });*/

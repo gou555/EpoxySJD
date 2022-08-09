@@ -14,7 +14,7 @@
     <!--Bootstrap & CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="icon" href="Images/logo_favicon.ico"/>
-    <link rel="stylesheet" href="css/style.css"/­>
+    <link rel="stylesheet" href="css/style.css"/>
     
     <!--Font Awesome Icons Kit-->
     <script src="https://kit.fontawesome.com/d0f2875e8b.js" crossorigin="anonymous"></script>
@@ -142,26 +142,19 @@
         <div class="row">
           <div class="col-md-9 px-md-5">
             <div class="well well-sm">
-              <form action="https://formsubmit.co/69a3faf9c73e05bc3a9430c4be2e6ec1" method="POST">
+              <form action="mail.php" method="POST" data-netlify="true">
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="form-group">
                       <input type="text" class="form-control" id="name" placeholder="Nom" required="required"/>
-                    </div>
                     <br>
-                    <div class="form-group">          
                       <input type="email" class="form-control" id="email" placeholder="Email" required="required"/>
-                    </div>
                     <br>
                   </div>
                   <div class="col-md-8">
-                    <div class="form-group">
                         <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
                             placeholder="Message"></textarea>
-                    </div>
                     <div class="col-md-12 my-2">
-                      <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-                          Envoyer</button>
+                      <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Envoyer</button>
                     </div>
                   </div>           
                 </div>
