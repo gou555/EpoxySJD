@@ -36,7 +36,7 @@
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar_id">
       <div class="container-fluid">
-        <a class="navbar-brand px-3" href="#accueil"><img src ="Images/logoSJD_bgremoved.png" width="155" height="50" alt="Logo Époxy SJD"/></a>
+        <a class="navbar-brand px-3" href="javascript:void(0)"><img src ="Images/logoSJD_bgremoved.png" width="155" height="50" alt="Logo Époxy SJD"/></a>
         <button class="navbar-toggler px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" id="menu_toggler_btn">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,7 +46,7 @@
               <a class="nav-link px-3 fs-3" href="#accueil">Accueil</a>
             </li>
             <li class = "nav-item">
-              <a class="nav-link px-3 fs-3" href="#gallery">Gallery</a>
+              <a class="nav-link px-3 fs-3 text-decoration-none" href="#gallery">Gallery</a>
             </li>
             <li class = "nav-item">
               <a class="nav-link px-3 fs-3" href="#contact">Contact</a>
@@ -56,9 +56,9 @@
       </div>
 
         <!--Accueil-->
-        <section class="container-fluid p-2" id="accueil">
+        <section class="container-fluid p-2" name="accueil">
           <div class="d-flex bg-img flex-column justify-content-center">
-            <h2 class="display-2 text-center text-white">Spécialisto en revêtement d'époxy</h2>
+            <h2 class="display-2 text-center text-white">Spécialiste en revêtement d'époxy</h2>
             <h5 class="display-6 text-center text-white">Pour vos petits et grands projets</h5>
             <h5 class="display-7 text-center text-white">Contactez-nous pour une estimation GRATUITE</h5>
 
@@ -140,63 +140,63 @@
       </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-9 px-md-5">
+          <div class="col-md-10 px-md-5">
             <div class="well well-sm">
-              <form action="mail.php" method="POST">
+              <form action="https://formsubmit.co/69a3faf9c73e05bc3a9430c4be2e6ec1" method="POST">
                 <div class="row">
-                  <div class="col-md-4">
-                      <input type="text" class="form-control" id="name" placeholder="Nom" required="required"/>
+                  <div class="col-md-5">
+                      <input type="text" class="form-control" name="name" id="nameValue" placeholder="Nom" required="required"/>
                     <br>
-                      <input type="email" class="form-control" id="email" placeholder="Email" required="required"/>
+                      <input type="email" class="form-control" name="email" placeholder="Email" required="required"/>
+                    <br>
+                    <input type="file" class="form-control" name="attachment" placeholder="Images" accept="image/png, image/jpeg">
                     <br>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-7">
                         <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
                             placeholder="Message"></textarea>
                     <div class="col-md-12 my-2">
-                      <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Envoyer</button>
+                      <script>
+                        function GetValue(){
+                          let nameValue = document.getElementById("nameValue").value;
+                          document.getElementById("subject").value = "Nouveau email reçu du site epoxysjd.com " + nameValue;
+
+
+                        }
+                      </script>
+                      <input type="hidden" name="_subject" id="subject">
+                      <input type="hidden" name="_next" value="http://127.0.0.1:8080">
+                      <input type="submit" onclick="GetValue()" class="btn btn-primary pull-right" id="btnContactUs"></input>
+                      <input type="hidden" name="_template" value="box">
+                      <input type="hidden" name="_captcha" value="false">
+                      <input type="text" name="_honey" style="display:none">                    
                     </div>
                   </div>           
                 </div>
                 
               </form>
-              <div id="display"></div>
             </div>
           </div>
-        
-            <div class="col-md-3 px-md-5 d-flex justify-content--center">
-              <div class="well well-sm">
-                <form>
-                  <div class="row my-3">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <address>
-                          <i class="fa-solid fa-envelope fa-xl" style="color:white"></i>
-                          <a href="mailto:#">epoxysjd@gmail.com</a>
-                        </address>
-                      </div>
-                    </div>
-                    <div class="row my-3">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <i class="fa-solid fa-phone fa-xl" style="color:white"></i>
-                          <label style="color:white">(418) 997-6252</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row my-3">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <a href="https://www.instagram.com/epoxysjd/"><i class="fa-brands fa-instagram fa-xl"style="color:white"></i></a>
-                          
-                          <a href="https://www.facebook.com/%C3%89POXY-SJD-103274411498003/"><i class="fa-brands fa-facebook fa-lg" style="color:white"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                </form>
+            <!--Grid column-->
+        <div class="col-md-2 text-center text-white">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>(418) 997-6252</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>epoxysjd@gmail.com</p>
+              </li>
+              <br>
+              <div class="row my-1">
+                <div class="col-md-12">
+                <a href="https://www.instagram.com/epoxysjd/"><i class="fa-brands fa-instagram fa-xl px-2"style="color:white"></i></a>
+                <a href="https://www.facebook.com/%C3%89POXY-SJD-103274411498003/"><i class="fa-brands fa-facebook fa-xl px-2"style="color:white"></i></a>
+                </div>
               </div>
+          </ul>
+      </div>
+      <!--Grid column-->
             </div>
           </div>
       </div>
