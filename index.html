@@ -147,10 +147,7 @@
                   <div class="col-md-5">
                       <input type="text" class="form-control" name="name" id="nameValue" placeholder="Nom" required="required"/>
                     <br>
-                      <input type="email" class="form-control" name="email" placeholder="Email" required="required"/>
-                    <br>
-                    <input type="file" class="form-control" name="attachment" placeholder="Images" accept="image/png, image/jpeg">
-                    <br>
+                      <input type="email" class="form-control" name="email" placeholder="Email" required="required"/>                    
                   </div>
                   <div class="col-md-7">
                         <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
@@ -159,7 +156,7 @@
                       <script>
                         function GetValue(){
                           let nameValue = document.getElementById("nameValue").value;
-                          document.getElementById("subject").value = "Nouveau email reçu du site epoxysjd.com " + nameValue;
+                          document.getElementById("subject").value = "Nouveau email reçu du site epoxysjd.com de : " + nameValue;
 
 
                         }
@@ -196,7 +193,6 @@
               </div>
           </ul>
       </div>
-      <!--Grid column-->
             </div>
           </div>
       </div>
